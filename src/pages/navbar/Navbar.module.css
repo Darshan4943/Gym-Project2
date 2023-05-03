@@ -2,23 +2,23 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
-    height: auto;
+   position:fixed;
+   
     background-color: rgba(218, 149, 149, 0.678);
     box-shadow: 0 0 50px rgb(0, 0, 0);
-    position: fixed;
+    
     width: 100%;
   }
   
     .logo{
-      font-size: 3rem;
+      font-size: 4rem;
      
-      margin-top: 1rem;
+      margin: 1rem;
      
     }
   
   .lists{
-    display: flex;
+    display: flex; 
     list-style: none;
   }
   .header ul li{
@@ -47,11 +47,10 @@
       .header{
         display: flex;
         justify-content: space-between;
-        padding: 0.5rem;
-        height: auto;
+        
         background-color: rgba(0, 0, 0, 0.678);
         box-shadow: 0 0 50px rgb(0, 0, 0);
-        position: fixed;
+        
         width: 100%;
     }
       .lists{
@@ -85,7 +84,8 @@
        
         border: none;
         outline: none;
-        right: 10px;
+        top: 3rem;
+        right: 5rem;
        
         height: 37px;
         

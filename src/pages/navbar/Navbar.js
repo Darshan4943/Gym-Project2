@@ -19,7 +19,7 @@ const Navbar = () => {
         <header className={styles.header}>
 
             <div className={styles.logo}  ><Link to ='/'>
-                <SportsGymnasticsIcon style={{color:"white" }} /> </Link>
+                <SportsGymnasticsIcon sx={{fontSize:45,color:"red" }} /> </Link>
             </div>
           
             <ul className={isMenuOpen ? styles.listresponsive : styles.lists}>
