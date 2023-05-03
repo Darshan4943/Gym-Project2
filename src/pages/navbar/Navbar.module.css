@@ -1,0 +1,96 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    height: auto;
+    background-color: rgba(218, 149, 149, 0.678);
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+  }
+  
+    .logo{
+      font-size: 3rem;
+     
+      margin-top: 1rem;
+     
+    }
+  
+  .lists{
+    display: flex;
+    list-style: none;
+  }
+  .header ul li{
+    margin-right: 3rem;
+    margin-top: 1rem;
+    font-size: 24px;
+    color: red;
+  
+  }
+  .header ul li:last-child{
+    margin-right: 4rem;
+  }
+  
+  
+  .menutoggle {
+  
+  display: none;
+  }
+  
+  
+  .header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+      .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.678);
+        box-shadow: 0 0 50px rgb(0, 0, 0);
+        position: fixed;
+        width: 100%;
+    }
+      .lists{
+          display: none;
+      }
+      .listresponsive{
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 30%;
+        text-align: center;
+        top: 100px;
+        right: 10px;
+        color: gray;
+        background: rgb(77, 74, 74);
+      }
+      .listresponsive li{
+        padding-top: 5px;
+        font-size: 16px;
+        padding-bottom: 10px;
+        cursor: pointer;
+      }
+      .listresponsive li:hover{
+        color: black;
+      }
+      
+      .menutoggle{
+        display: block;
+        position: absolute;
+        color: gray;
+       
+        border: none;
+        outline: none;
+        right: 10px;
+       
+        height: 37px;
+        
+        font-size: 24px;
+           
+      }
+        
+  }
