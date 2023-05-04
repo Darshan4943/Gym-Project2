@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid"; // import uuidv4 from uuid package
 import style from "./SignUp.module.css";
 import {  Button, TextField } from "@mui/material";
 
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 
 const SignUp = () => {
