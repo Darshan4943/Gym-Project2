@@ -8,7 +8,7 @@ import  Footer  from './pages/footer/Footer';
 import JoinUs from './pages/joinUs/JoinUs';
 import Trainer from './pages/trainer/Trainer';
 import Pricing from './pages/pricing/Pricing';
-
+import SignIn from './pages/joinUs/signIn/SignIn';
 function App() {
   return (
     <div className={styles.main}>
@@ -21,6 +21,7 @@ function App() {
            <Route path='/trainer' element={<Trainer/>}/>
            <Route path='/joinus' element={<JoinUs/>}/>
            <Route path='/pricing' element={<Pricing/>}/>
+           <Route path='/signin' element={<SignIn/>}/>
            
         </Routes>
     

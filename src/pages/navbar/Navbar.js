@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark,faBars} from '@fortawesome/free-solid-svg-icons';
-import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
+
 import SportsGymnasticsIcon from '@mui/icons-material/SportsGymnastics';
 import styles from'./Navbar.module.css'
 
