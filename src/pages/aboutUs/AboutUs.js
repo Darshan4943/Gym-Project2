@@ -34,12 +34,12 @@ export default function AboutUs() {
         </div>
         <div className={a.down}>
           <div className={a.content}>
-            <h3></h3>
+            
             <p>
               Accordingly, exercise will help you increase energy levels, reduce
               chronic disease risk, lose weight, and help improve brain health
               and memory. With such benefits, you probably will love to do
-              workout routines soon. Luckily, you don’t need to do it yourself
+              workout routines soon. Luckily, you don't need to do it yourself
               as various personal trainers, or professional fitness coaches
               provide the help you need. And joining fitness classes is just at
               your fingertips.

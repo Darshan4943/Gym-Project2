@@ -1,21 +1,19 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid"; // import uuidv4 from uuid package
 
 import style from "./SignUp.module.css";
-import { Box, Button, TextField } from "@mui/material";
+import {  Button, TextField } from "@mui/material";
 
 import { Link, useNavigate } from "react-router-dom";
-import TwitterIcon from '@mui/icons-material/Twitter';
 
 
 const SignUp = () => {
- 
   const navigate = useNavigate();
 
   const [data, setData] = useState({
     name: "",
     email: "",
     password: "",
-   
   });
 
   function handleName(e) {
@@ -36,8 +34,6 @@ const SignUp = () => {
     setData(input);
   }
 
-
-
   function getData() {
     const users = localStorage.getItem("users");
     if (users) {
@@ -56,26 +52,26 @@ const SignUp = () => {
     const regexpass = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
     const regexemail = /^\S+@\S+\.\S+$/;
     const users = getData();
+
     if (
       !data.name ||
-      
       !data.email ||
       !data.password 
-     
     ) {
-      alert("Please Fill All the deatails!!");
+      alert("Please Fill All the details!!");
     } 
     else if (!regexpass.test(data.password)) {
-      alert( "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!");
+      alert("Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!");
     }
     else if (!regexemail.test(data.email)) {
       alert("It should be a valid email address");
     }
-      else {
-      alert("registeration success");
-      users.push(data);
+    else {
+      const userId = uuidv4(); // generate unique id for user
+      const userData = { ...data, userId }; // add id to user data
+      users.push(userData);
       localStorage.setItem("users", JSON.stringify(users));
-      
+      alert("Registration successful!");
       navigate("/signin")
     }
   }

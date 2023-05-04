@@ -1,0 +1,115 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 2rem;
+  }
+  .box{
+    border-radius: 12px;
+    margin-top: 2rem;
+    margin-left: 1.5rem ;
+    margin-right: 1.5rem;
+    margin-bottom: .5rem;
+    min-width: 25rem;
+    height: 28rem;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+  }
+  .img{
+    border-radius: 12px;
+    overflow: hidden;
+    height: 20rem;
+    width: 25rem;
+  }
+  .wrap{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    border: none;
+    width: 70%;
+    overflow-x: auto;
+   
+    height: 100vh;
+    
+  }
+  /* .wrap::-webkit-scrollbar{
+    width: 0;
+  } */
+  .img>img{
+    width: 100%;
+  }
+  .item{
+    font-size: 20px;
+    font-weight: 650 ;
+    color: #fff;
+  }
+  .vcontrainer{
+    margin-top: 1rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .txt{
+    padding: 3rem;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .vdo{
+    text-align: center;
+    width: 50%;
+    margin-top: 1.5rem;
+  }
+  .txt>span{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .txt>p{
+    color: #faf8f7;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .box>button{
+    border-radius: 8px; 
+    border: none;
+    font-weight: 650;
+    background-color: rgb(7, 7, 7);
+    width: 30%;
+    padding: .5rem .8rem;
+  }
+  
+  @media  screen  and (max-width:500px) {
+    .vcontrainer{
+        margin: 1rem;
+        width: 100vw;
+        display: block;  
+    }
+    .txt>span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .txt>p{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .box{
+        
+        min-width: 16rem;
+        height: 15rem;
+        text-align: center;
+        
+    }
+    .wrap{
+        margin-left: 10%;
+        width: 80%;
+    }
+    .img{
+        height: 50%;
+        width: 50%;
+    }
+    .main{
+        width: 100vw;
+    }
+  
+    
+  }
