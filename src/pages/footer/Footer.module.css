@@ -1,8 +1,42 @@
-.main{
-    background-color: rgb(67, 61, 61);
-    width:100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.footer {
+   
+
+    background-color: #222;
+    color: #fff;
+    padding: 0.3rem;
     
-    
+  }
+h2{
+    margin-left: 80px;
 }
+p{
+   text-align: center;
+}
+  
+  .social {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 2rem;
+    
+  }
+ 
+ 
+  a.youtube {
+    color: #eb3223;
+    
+  }
+  
+  a.facebook {
+    color: #4968ad;
+    margin-left: 30px;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+    margin-left: 30px;
+  }
+  
+  a.instagram {
+    color: rgb(116, 8, 69);
+    margin-left: 30px;
+  }
