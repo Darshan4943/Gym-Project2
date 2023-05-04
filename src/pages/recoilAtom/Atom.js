@@ -5,11 +5,7 @@ export const isLogin = atom({
   default: false,
 });
 
-export const tweetData = atom({
-  key: "tweetData",
-  default: [],
-});
-export const userData = atom({
-  key: "userData",
-  default: [],
+export const isSub = atom({
+  key: "isSub",
+  default: false,
 });
