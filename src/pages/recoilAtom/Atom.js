@@ -5,7 +5,7 @@ export const isLogin = atom({
   default: false,
 });
 
-export const isSub = atom({
-  key: "isSub",
+export const issub = atom({
+  key: "issub",
   default: false,
 });
