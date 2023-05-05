@@ -44,7 +44,7 @@ function SignIn() {
       if (user.password.toString() === password.toString()) {
         setlogin(true);
         localStorage.setItem("userData", JSON.stringify(user1));
-        navigate("/home");
+        navigate("/");
       } else {
         alert("Invalid password");
       }
@@ -71,16 +71,11 @@ function SignIn() {
   };
 
   const validatePassword = () => {
-    const regex =
-      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
+  
     if (!password) {
       setErrorPass("Password is required!");
       return false;
-    } else if (!regex.test(password)) {
-      setErrorPass(
-        "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!"
-      );
-      return false;
+     
     } else {
       setErrorPass("");
       return true;

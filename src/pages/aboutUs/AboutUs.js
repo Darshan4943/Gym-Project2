@@ -4,9 +4,7 @@ import a from "./AboutUs.module.css";
 
 export default function AboutUs() {
 
-  const handleClick=()=>{
-  //navigate to Contact us page
-  }
+ 
   return (
     <>
       <div className={a.container}>
@@ -21,7 +19,7 @@ export default function AboutUs() {
           ></iframe>
           </div>
           <div className={a.content}>
-            <p>
+            <p className={a.p}>
               Being physically and mentally fit is necessary to live a happy,
               long life. Exercise is one of the best ways to keep a person
               healthy. Hence, it is always best to find a workout routine no
@@ -35,7 +33,7 @@ export default function AboutUs() {
         <div className={a.down}>
           <div className={a.content}>
             
-            <p>
+            <p  className={a.p1}>
               Accordingly, exercise will help you increase energy levels, reduce
               chronic disease risk, lose weight, and help improve brain health
               and memory. With such benefits, you probably will love to do
@@ -43,14 +41,7 @@ export default function AboutUs() {
               as various personal trainers, or professional fitness coaches
               provide the help you need. And joining fitness classes is just at
               your fingertips.
-              <div>
-                <button
-                  onClick={handleClick}
-                  className={a.btn}
-                >
-                 Contact Us
-                </button>
-              </div>
+           
             </p>
           </div>
           <div className={a.content}>

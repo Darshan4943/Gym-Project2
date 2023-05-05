@@ -29,7 +29,7 @@ const PricingSection = () => {
   const [selectedPlan, setSelectedPlan] = useState(null);
   const [email, setEmail] = useState(null);
 
-  // Load selected plan from local storage on component mount
+  
   useEffect(() => {
     const storedSelectedPlan = JSON.parse(localStorage.getItem(`selectedPlan_${email}`));
     if (storedSelectedPlan) {
@@ -37,22 +37,15 @@ const PricingSection = () => {
     }
   }, [email]);
 
-  useEffect(() => {
-    const storedUserId = localStorage.getItem('userId');
-    setEmail(storedUserId);
-  }, []);
-
+ 
   function handleSelectPlan(pricing) {
     setSelectedPlan(pricing);
     localStorage.setItem(`selectedPlan_${email}`, JSON.stringify(pricing));
   }
 
-  function handleCancelSubscription() {
-    setSelectedPlan(null);
-    localStorage.removeItem(`selectedPlan_${email}`);
-  }
+  
 
-  // Get the stored plan for the current user
+  
   useEffect(() => {
     const storedSelectedPlan = JSON.parse(localStorage.getItem(`selectedPlan_${email}`));
     if (storedSelectedPlan) {
@@ -63,6 +56,7 @@ const PricingSection = () => {
   }, [email]);
 
   return (
+    <div className={styles.main}>
     <div className={styles.container_pricing}>
       {pricingData.map((pricing) => (
         <div className={styles.pricing_box} key={pricing.type}>
@@ -70,11 +64,11 @@ const PricingSection = () => {
             <h3>{pricing.type}</h3>
             <div className={styles.price}>${pricing.price}/mo</div>
             <p>{pricing.description}</p>
-            {islogin && ( // Only show select/cancel button when user is logged in
+            {islogin && ( 
               <button
                 className={styles.button_pricing}
                 onClick={() => handleSelectPlan(pricing)}
-                disabled={selectedPlan && selectedPlan.type === pricing.type} // Disable button if plan is already selected
+                disabled={selectedPlan && selectedPlan.type === pricing.type} 
               >
                 {selectedPlan && selectedPlan.type === pricing.type ? "selected" : "select plan"}
               </button>
@@ -82,7 +76,7 @@ const PricingSection = () => {
           </div>
         </div>
       ))}
-     
+     </div>
     </div>
   );
 };

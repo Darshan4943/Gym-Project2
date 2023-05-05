@@ -54,24 +54,23 @@ export default function Product() {
     },
   ];
 
-  const handleClick=()=>{
-    alert('Subscribed successfully');
-  }
+ 
 
   return (
     
      
-       
+       <div className={p.main}>
         <div className={p.wrap}>
           {Course.map((e) => {
             return (
               <div key={e.id} className={p.box}>
                 <img src={e.img} alt="" className={p.img} />
                 <p className={p.item}>{e.item} </p>
-                <button style={{ backgroundColor: '#fff' }} onClick={handleClick}>{e.price} </button>
+                
               </div>
             );
           })}
+        </div>
         </div>
      
    

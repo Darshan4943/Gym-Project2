@@ -14,7 +14,9 @@ export default function Home() {
          
           <div className={styles.textContainer}>
             <div className={styles.text}>
-              <h1>"Take care of your body. It's the only place you have to live."</h1>
+            <h1>"Take Care of Your <span style={{color:"red"}}>Body</span></h1>
+        <h1>It's the only place you</h1>
+        <h1>have to <span style={{color:"red"}}>live</span>."</h1>
             </div>
             <Link to='/joinus' className={styles.ctaBtn}>Join Us</Link>
           </div>

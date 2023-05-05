@@ -1,3 +1,6 @@
+.main{
+  background-color: #000000;
+}
 .container_pricing {
     /* position: fixed; */
       display: flex;
@@ -8,16 +11,17 @@
       max-width: 80%;
       padding: 40px 0;
       height: 80vh;
+     
     }
     
     .pricing_box {
-      background-color: #ffffff;
+      background-color: #545151;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       margin-bottom: 30px;
       margin: 5px;
-      width: 28%;
+      width: 20%;
       
     }
     
@@ -45,7 +49,7 @@
     }
     
     .inner1_pricing p {
-      color: #666666;
+      color: #fefbfb;
       font-size: 16px;
       margin-bottom: 10px;
     }
@@ -71,16 +75,18 @@
     @media (max-width: 700px) {
       .container_pricing {
         display: flex;
-      justify-content: center;
-      /* height: 400px; */
-      margin-top: 30px;
-      width: 100vw;
-      padding: 20px 10px;
-      height: 150vh;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 80%;
+      padding: 40px 0;
+      height: 170vh;
+     
       }
     
       .pricing_box {
-       
+       margin-top: 10rem;
         width: 319px;
         margin-bottom: 20px;
       }

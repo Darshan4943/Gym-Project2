@@ -1,18 +1,99 @@
 .main {
+  width: 100vw;
+  height: 130vh;
+  margin: 2rem;
+  display: flex;
+ 
+  
+}
+.container {
+  width: 100vw;
+  height: 150vh;
+  background-color: white;
+  display: flex;
+  background-image: url("https://media.istockphoto.com/id/953047628/photo/gym-background-with-equipment.jpg?s=612x612&w=0&k=20&c=fPGr6b3T0Lh6LNPqdtTNMdyGEt5ocqM1qtI1GfdsWF0=");
+  background-size: cover;
+  background-position: center;
+}
+.up {
+  height: 100vh;
+  width: 100vw;
+  
+
+}
+.down {
+  height: 100vh;
+  width: 100vw;
+  margin-top: -8rem;
+}
+.content {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10rem;
+  color: white;
+  
+  
+}
+.content > iframe {
+  height: 330px;
+  width: 623px;
+  border: 2px solid red;
+}
+
+
+.content > p {
+  font-size: 25px;
+  padding: 2rem;
+  font-weight: 550;
+  text-align: justify;
+  margin-left: 5rem;
+  margin-right: 5rem;
+ 
+ 
+  
+}
+.p{
+  margin-top: -10rem;
+}
+.p1{
+  margin-top: 10rem;
+}
+
+
+.btn {
+  background-color: red;
+  color: #fff;
+  margin-top: 0.5rem;
+  height: 2rem;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .main {
     width: 100vw;
-    height: 100vh;
-    background-color: white;
+    height: 130vh;
+    margin: 2rem;
     display: flex;
+   
+    
   }
   .container {
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-color: white;
     display: flex;
+    background-image: url("https://media.istockphoto.com/id/953047628/photo/gym-background-with-equipment.jpg?s=612x612&w=0&k=20&c=fPGr6b3T0Lh6LNPqdtTNMdyGEt5ocqM1qtI1GfdsWF0=");
+    background-size: cover;
+    background-position: center;
   }
   .up {
     height: 100vh;
     width: 100vw;
+    
+  
   }
   .down {
     height: 100vh;
@@ -21,22 +102,30 @@
   .content {
     height: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 10rem;
+    color: white;
+    
   }
   .content > iframe {
-    height: 230px;
-    width: 223px;
+    height: 330px;
+    width: 623px;
     border: 2px solid red;
   }
+  
   .content > p {
-    font-size: 15px;
+    font-size: 25px;
     padding: 2rem;
+    font-weight: 550;
+    text-align: justify;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
   }
-  .content > span {
-    font-weight: 750;
-  }
+  
   
   .btn {
     background-color: red;
@@ -45,21 +134,5 @@
     height: 2rem;
     border-radius: 3px;
   }
-  
-  /* For tablet */
-  @media (max-width: 600px) {
-    .up {
-      height: 50%;
-    }
-    .down {
-      height: 50%;
-    }
-    .container {
-      display: block;
-    }
-    .content > iframe {
-      height: 130px;
-      width: 323px;
-    }
-  }
-  
+
+}

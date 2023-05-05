@@ -84,7 +84,7 @@ function Trainer() {
   const [showAllCards, setShowAllCards] = useState(false);
 
   return (
-    <div className={styles.App}>
+    <div className={showAllCards ? styles.All : styles.half}>
       
       <div className={`card-grid ${showAllCards ? 'show-all' : ''}`}>
         {showAllCards ? (

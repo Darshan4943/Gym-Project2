@@ -4,8 +4,8 @@
     justify-content: space-between;
    
    position: fixed;
-    background-color: rgba(218, 149, 149, 0.678);
-    box-shadow: 0 0 50px rgb(0, 0, 0);
+    background-color: rgba(216, 23, 23, 0);
+    box-shadow: 0 0 50px rgb(162, 102, 102);
     
     width: 100%;
   }
@@ -48,9 +48,9 @@
         display: flex;
         justify-content: space-between;
         position: fixed;
-        background-color: rgba(218, 149, 149, 0.678);
+        background-color: rgba(52, 51, 51, 0.134);
         
-        box-shadow: 0 0 50px rgb(0, 0, 0);
+        box-shadow: 0 0 50px rgb(194, 135, 135);
         
         width: 100%;
     }
@@ -85,8 +85,8 @@
        
         border: none;
         outline: none;
-        top: 3rem;
-        right: 5rem;
+        top: 0.7rem;
+        right: 3rem;
        
         height: 37px;
         

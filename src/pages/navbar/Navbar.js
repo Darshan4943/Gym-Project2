@@ -28,7 +28,7 @@ const Navbar = () => {
               <li><Link to='/classes'>Classes</Link></li>
               <li><Link to='/trainer'>Trainer</Link></li> 
               <li><Link to='/pricing'>Pricing</Link></li>
-              <li ><Link to='/joinUs' style={{color:"red",fontSize:"24px"}}>Join Us</Link></li>
+              <li ><Link to='/joinUs' style={{color:"white",backgroundColor:"red", fontSize:"24px", padding:"8px",borderRadius:"4px"}}>Join Us</Link></li>
 
             </ul>
         
