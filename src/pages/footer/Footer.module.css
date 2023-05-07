@@ -9,14 +9,15 @@
 h2{
     margin-left: 80px;
 }
-p{
+.p{
    text-align: center;
+   margin-top: 0.4rem !important;
 }
   
   .social {
     display: flex;
     margin-left: 80px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     
   }
  

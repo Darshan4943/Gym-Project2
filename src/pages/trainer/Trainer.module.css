@@ -1,15 +1,7 @@
-.half{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCn0y99sQclon0iSn6vW9dFgNsuUu96SAcLQ&usqp=CAU");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-  background-position: center;
-  
 
-}
 .All{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCn0y99sQclon0iSn6vW9dFgNsuUu96SAcLQ&usqp=CAU");
-   height: 500%;
+   height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
   background-position: center;

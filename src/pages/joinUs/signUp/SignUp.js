@@ -138,7 +138,7 @@ const SignUp = () => {
       
         </div>
         <p>
-          Don t have an account? <br />
+          Already have account ? <br />
           <Button
           
           sx={{
@@ -148,7 +148,7 @@ const SignUp = () => {
             variant="contained"
             onClick={() => navigate("/signin")}
           >
-            Sign Up
+            Sign In
           </Button>
         </p>
       </div>

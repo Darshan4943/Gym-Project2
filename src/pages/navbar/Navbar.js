@@ -24,7 +24,7 @@ const Navbar = () => {
           
             <ul className={isMenuOpen ? styles.listresponsive : styles.lists}>
 
-              <li><Link to='/aboutUs'>AboutUs</Link></li>
+              <li><Link to='/aboutUs'>About Us</Link></li>
               <li><Link to='/classes'>Classes</Link></li>
               <li><Link to='/trainer'>Trainer</Link></li> 
               <li><Link to='/pricing'>Pricing</Link></li>

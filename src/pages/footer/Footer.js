@@ -31,7 +31,7 @@ export default function Footer() {
       </a>
   </div>
   <hr style={{borderTop:"1px solid black"}}/>
-  <p>&copy; Gold Gym</p>
+  <p className={styles.p}>&copy; Gold Gym</p>
 </footer>
 )
 }

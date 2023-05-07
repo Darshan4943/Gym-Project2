@@ -31,6 +31,16 @@ export default function AboutUs() {
           </div>
         </div>
         <div className={a.down}>
+          
+          <div className={a.content}>
+            <iframe
+            src="https://www.youtube.com/embed/iaZx5FLPlXo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen="true"
+          ></iframe>
+          </div>
           <div className={a.content}>
             
             <p  className={a.p1}>
@@ -43,15 +53,6 @@ export default function AboutUs() {
               your fingertips.
            
             </p>
-          </div>
-          <div className={a.content}>
-            <iframe
-            src="https://www.youtube.com/embed/iaZx5FLPlXo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen="true"
-          ></iframe>
           </div>
         </div>
       </div>
